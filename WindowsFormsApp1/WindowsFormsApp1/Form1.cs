@@ -12,16 +12,28 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+     
         public Form1()
         {
             InitializeComponent();
+           
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label1.Location = new Point(label1.Location.X, label1.Location.Y - 10);
 
 
-        
+        }
 
-        
+        private void label1_ControlAdded(object sender, ControlEventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label1.Location = new Point(label1.Location.X, label1.Location.Y + 10);
+        }
     }
 }
