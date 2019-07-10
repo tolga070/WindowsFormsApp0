@@ -33,6 +33,21 @@ namespace WindowsFormsApp1
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label1.Location = new Point(label1.Location.X, label1.Location.Y - 10);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label1.Location = new Point(label1.Location.X, label1.Location.Y + 10);
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             
